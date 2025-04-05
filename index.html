@@ -5,33 +5,53 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <header>
-            <img src="avatar.png"/>
-            <h1>Jan Weis</h1>
-            <span>Software Developer</span>
-        </header>
-        <main>
-            <section>
-                <h2>About</h2>
-                <p>Opis</p>
-            </section>
-            <section>
-                <h2>Doświadczenie zawodowe</h2>
-                <ul>
-                    <li>Antrez1</li>
-                    <li>Antrez2</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Wykształcenie</h2>
-                <ul>
-                    <li>UG: <a href="https://www.UG.pl/">Uniwersytet Gdański</a></li>
-                    <li>PG: <a href="https://www.PG.pl/">Politechnika Gdańska</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Zainteresowania</h2>
-            </section>
-        </main>
+        <div class="container">
+            <header>
+                <img class="circle" src="avatar.png"/>
+                <div>
+                    <h1>Jan Weis</h1>
+                    <span>Software Developer</span>
+                    <div>
+                        <a class="CV-download" href="https//www.pobierz.pl">Pobierz CV pdf</a>
+                    </div>
+                </div>    
+                <address>
+                    <ul>
+                        <li><img class="addres-icon circle" src="ikonka.png"/><a href="tel:123456789">123456789</a></li>
+                        <li><a href="mailto:janfranciszekweis@gmail.com">Adres</a></li>
+                        <li>miejsce zamieszkania</li>
+                        <li>linki</li>
+                    </ul>
+                </addres>
+            </header>
+            <main>
+                <section>
+                    <h2>About</h2>
+                    <p>Opis</p>
+                </section>
+                <section>
+                    <h2>Doświadczenie zawodowe</h2>
+                    <ul>
+                        <li>Antrez1</li>
+                        <li>Antrez2</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Wykształcenie</h2>
+                    <ul>
+                        <li>UG: <a href="https://www.UG.pl/">Uniwersytet Gdański</a></li>
+                        <li>PG: <a href="https://www.PG.pl/">Politechnika Gdańska</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Zainteresowania</h2>
+                    <ul  class="hobbies">
+                        <li>chess</li>
+                        <li>guitar</li>
+                        <li>japan</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
     </body>    
 </html>
