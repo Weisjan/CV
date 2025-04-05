@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+}
+h2 {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+span {
+    color: grey;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+section {
+    padding: 10px 60px 20px 60px;
+}
