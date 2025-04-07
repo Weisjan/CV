@@ -1,101 +1,96 @@
 body {
-    font-family: Arial;
-    background-color: aliceblue;
-    padding: 40px, 0px;
+  font-family: Arial;
+  background-color: aliceblue;
+  padding: 40px, 0px;
 }
+
 h2 {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-span {
-    color: grey;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 img {
-    width: 150px;
-    height: 150px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover; /* Zachowuje proporcje */
+  border: 8px solid white; /* Dodaje ramkę */
 }
 
-section, header {
-    padding: 10px 60px 20px 60px;
-    background-color: white;
-
+.left {
+  position: relative;
+  background-color: #f8f8f8;
+  margin-right: 60%;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers elements horizontally */
+  justify-content: center; /* Centers elements vertically */
+  text-align: center; /* Centers text inside elements */
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 60px;
-}
-
-header ul {
-    list-style: none;
-}
-
-li {
-    margin-bottom: 15px;
-}
-
-.addres-icon {
-    width: 16px;
-    height: 16px;
-    background-color: blue;
-    margin-right: 10px;
-    padding: 8px;
-    vertical-align: middle;
+  position: absolute;
+  padding: 15%;
+  align-items: center;
+  z-index: 1;
 }
 
 .circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-.hobbies {
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-.hobbies li {
-    width: 50%;
-    align-items: flex-start;
+.triangle {
+  position: relative;
+  width: 100%;
+  height: 265px;
+  background-color: #608abf;
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .CV-download {
-    border: 2px solid cornflowerblue;
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    border-radius: 26px;
-    transition: background-color 0.5s, color 0.5s;
-    box-shadow: 0 0 10px grey;
+  border: 2px solid cornflowerblue;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 26px;
+  transition: background-color 0.5s, color 0.5s;
+  box-shadow: 0 0 10px grey;
 }
 
 .CV-download:hover {
-    color: white;
-    background-color: cornflowerblue;
+  color: white;
+  background-color: cornflowerblue;
 }
 
 .CV-download:focus {
-    outline: none;
-    color: white;
-    background-color: cornflowerblue;
+  outline: none;
+  color: white;
+  background-color: cornflowerblue;
 }
 
 .CV-download:active {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .container {
-    box-shadow: 0 0 10px grey;
-    width: 860px;
-    margin: 0 auto;
-    background-color: white;
+  box-shadow: 0 0 10px grey;
+  width: 100%;
+  max-width: 21cm; /* Limit the maximum width */
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
 }
