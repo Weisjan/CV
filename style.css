@@ -35,8 +35,8 @@ p {
 }
 
 .ul-skills li {
-  font-size: 15px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
   display: flex;
   list-style: none;
   position: relative;
@@ -46,10 +46,10 @@ p {
 .ul-skills li::before {
   content: "•";
   color: #608abf;
-  font-size: 30px;
+  font-size: 40px;
   position: absolute;
   left: 0;
-  top: 35%;
+  top: 32.5%;
   transform: translateY(-50%);
 }
 
@@ -223,13 +223,13 @@ header {
   margin-bottom: 30px;
 }
 
-.job {
+.bulletpoint {
   margin: auto;
   position: relative;
   padding-left: 25px;
 }
 
-.job::before {
+.bulletpoint::before {
   content: "•";
   color: #608abf;
   font-size: 50px;
@@ -239,7 +239,7 @@ header {
   transform: translateY(-50%);
 }
 
-.job::after {
+.bulletpoint::after {
   content: "";
   position: absolute;
   left: 6.7px;
@@ -249,26 +249,40 @@ header {
   background-color: #608abf;
 }
 
-.job-details {
+.section:nth-of-type(4) .bulletpoint::before {
+  content: "•";
+  color: #608abf;
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.section:nth-of-type(4) .bulletpoint::after {
+  content: none;
+}
+
+.details {
   font-size: 13px;
   font-weight: normal;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-.job-details span {
+.details span {
   font-size: 16px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-.job-details p {
+.details p {
   font-size: 13px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
 
-.job-title {
+.title {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -280,12 +294,12 @@ header {
   margin-top: 3px;
 }
 
-.job-title span {
+.title span {
   font-size: 11px;
   margin: 0%;
 }
 
-.job-title em {
+.title em {
   font-size: 14px;
   margin: 0%;
 }

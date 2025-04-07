@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jan Weis - CV" />
     <title>Jan Weis - CV</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="translate.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="left">
         <div class="triangle"></div>
         <header>
-          <img class="circle" src="images/avatar.jpg" />
+          <img class="circle" src="images/avatar.jpg" alt="Profile picture" />
           <h1>Jan Weis</h1>
           <h3>Software Engineer</h3>
-          <a class="CV-download" href="https//www.pobierz.pl">Download CV</a>
+          <a
+            class="CV-download"
+            href="https//www.pobierz.pl"
+            data-i18n="Download"
+            >Download CV</a
+          >
+          <a href="#" id="lang-toggle" class="CV-download">PL</a>
         </header>
         <section class="section">
           <div class="section-header">
@@ -21,19 +31,23 @@
               src="images/icons/phone.svg"
               alt="phone icon"
             />
-            <h2 class="section-header">Contact</h2>
+            <h2 class="section-header" data-i18n="Contact">Contact</h2>
           </div>
           <hr class="line" />
           <ul class="ul-contact">
             <li>
-              <img class="icon" src="images/icons/phone2.svg" /><a
-                class="link"
-                href="tel:123456789"
-                >+48 605176117</a
-              >
+              <img
+                class="icon"
+                src="images/icons/phone2.svg"
+                alt="phone icon"
+              /><a class="link" href="tel:123456789">+48 605176117</a>
             </li>
             <li>
-              <img class="icon" src="images/icons/email.svg" /><a
+              <img
+                class="icon"
+                src="images/icons/email.svg"
+                alt="email icon"
+              /><a
                 class="link"
                 href="mailto:janfranciszekweis@gmail.com
                 "
@@ -41,7 +55,7 @@
               </a>
             </li>
             <li>
-              <img class="icon" src="images/icons/web.svg" /><a
+              <img class="icon" src="images/icons/web.svg" alt="web icon" /><a
                 class="link"
                 href="https://www.linkedin.com/in/jan-weis01
                 "
@@ -49,7 +63,11 @@
               </a>
             </li>
             <li>
-              <img class="icon" src="images/icons/github.svg" /><a
+              <img
+                class="icon"
+                src="images/icons/github.svg"
+                alt="github icon"
+              /><a
                 class="link"
                 href="https://github.com/Weisjan
 
@@ -64,12 +82,12 @@
             <img
               class="icon-header"
               src="images/icons/user.svg"
-              alt="phone icon"
+              alt="user icon"
             />
-            <h2 class="section-header">About Me</h2>
+            <h2 class="section-header" data-i18n="AboutMe">About Me</h2>
           </div>
           <hr class="line" />
-          <p>
+          <p data-i18n="AboutMeDescription">
             I am a postgraduate with a growing interest in machine learning and
             teamwork, always motivated to learn and develop new skills. I have
             developed coordination and management abilities through active
@@ -83,17 +101,17 @@
             <img
               class="icon-header"
               src="images/icons/puzzle.svg"
-              alt="phone icon"
+              alt="puzzle icon"
             />
-            <h2 class="section-header">Skills</h2>
+            <h2 class="section-header" data-i18n="Skills">Skills</h2>
           </div>
           <hr class="line" />
           <ul class="ul-skills">
-            <li>Critical thinking</li>
-            <li>Teamwork</li>
-            <li>Communication</li>
-            <li>Creativity</li>
-            <li>Problem solving</li>
+            <li data-i18n="CriticalThinking">Critical thinking</li>
+            <li data-i18n="Teamwork">Teamwork</li>
+            <li data-i18n="Communication">Communication</li>
+            <li data-i18n="Creativity">Creativity</li>
+            <li data-i18n="ProblemSolving">Problem solving</li>
           </ul>
         </section>
       </div>
@@ -103,41 +121,41 @@
             <img
               class="icon-header"
               src="images/icons/job.svg"
-              alt="phone icon"
+              alt="job icon"
             />
-            <h2 class="section-header">Experience</h2>
+            <h2 class="section-header" data-i18n="Experience">Experience</h2>
           </div>
           <hr class="line" />
-          <div class="job">
-            <div class="job-details">
+          <div class="bulletpoint">
+            <div class="details">
               <span>Software Engineer</span>
-              <div class="job-title">
+              <div class="title">
                 <em>
                   <a class="link" href="https://www.antrez.pl"
                     >Antrez Medical Software</a
                   ></em
                 >
-                <span>October 2023 - January 2025</span>
+                <span data-i18n="DateAntrez1">October 2023 - January 2025</span>
               </div>
-              <p>
+              <p data-i18n="Antrez1Description">
                 Developed, tested, and implemented software solutions for
                 medical applications.
               </p>
               <p><strong>Python, C++, SQL</strong></p>
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
+          <div class="bulletpoint">
+            <div class="details">
               <span>Software Engineering Intern</span>
-              <div class="job-title">
+              <div class="title">
                 <em>
                   <a class="link" href="https://www.antrez.pl"
                     >Antrez Medical Software</a
                   ></em
                 >
-                <span>July 2023 - October 2023</span>
+                <span data-i18n="DateAntrez2">July 2023 - October 2023</span>
               </div>
-              <p>
+              <p data-i18n="Antrez2Description">
                 Assisted in design and code system components. Gained experience
                 in software development and system integration.
               </p>
@@ -150,55 +168,60 @@
             <img
               class="icon-header"
               src="images/icons/education.svg"
-              alt="phone icon"
+              alt="education icon"
             />
-            <h2 class="section-header">Education</h2>
+            <h2 class="section-header" data-i18n="Education">Education</h2>
           </div>
           <hr class="line" />
-          <div class="job">
-            <div class="job-details">
+          <div class="bulletpoint">
+            <div class="details">
               <span>
                 <a
                   class="link"
                   href="https://www.udemy.com/course/machinelearning/?srsltid=AfmBOoqVaLyoVp8A32dIeeIqdpvKFEYaR7nXHq8sIYSKeU7EBR5n3rHO&couponCode=LETSLEARNNOW"
+                  data-i18n="ML"
                   >Machine Learning A-Z Course</a
                 ></span
               >
-              <div class="job-title">
+              <div class="title">
                 <em>Udemy</em>
-                <span>December 2024 - Present</span>
+                <span data-i18n="MLDate">December 2024 - Present</span>
               </div>
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span>Master's degree - Informatics and Econometrics</span>
-              <div class="job-title">
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="IE"
+                >Master's degree - Informatics and Econometrics</span
+              >
+              <div class="title">
                 <em>
-                  <a class="link" href="https://en.ug.edu.pl"
+                  <a class="link" href="https://en.ug.edu.pl" data-i18n="UG"
                     >University of Gdańsk</a
                   ></em
                 >
-                <span>October 2024 - Present</span>
+                <span data-i18n="UGDate">October 2024 - Present</span>
               </div>
-              <p>Profile: Big data analysis</p>
+              <p data-i18n="UGProfile">Profile: Big data analysis</p>
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="ACIR"
                 >Bachelor of Engineering – Automatic Control, Cybernetics and
                 Robotics</span
               >
-              <div class="job-title">
+              <div class="title">
                 <em>
-                  <a class="link" href="https://pg.edu.pl/en"
+                  <a class="link" href="https://pg.edu.pl/en" data-i18n="PG"
                     >Gdańsk University of Technology</a
                   ></em
                 >
-                <span>October 2020 - March 2024</span>
+                <span data-i18n="PGDate">October 2020 - March 2024</span>
               </div>
-              <p>Profile: Decision Systems and Robotics</p>
+              <p data-i18n="PGProfile">
+                Profile: Decision Systems and Robotics
+              </p>
             </div>
           </div>
         </section>
@@ -207,35 +230,37 @@
             <img
               class="icon-header"
               src="images/icons/projects.svg"
-              alt="phone icon"
+              alt="project icon"
             />
-            <h2 class="section-header">Significant Academic Projects</h2>
+            <h2 class="section-header" data-i18n="Projects">
+              Significant Academic Projects
+            </h2>
           </div>
           <hr class="line" />
-          <div class="job">
-            <div class="job-details">
-              <span>Anti-plagiarism System</span>
-              <p>
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="AntiPlagiarism">Anti-plagiarism System</span>
+              <p data-i18n="AntiPlagiarismDescription">
                 System that detects and highlights similarities in file content,
                 including naming conventions, structure, functionality, and
                 resemblance to code generated by chat GPT
               </p>
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span>Nao Robot</span>
-              <p>
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="NAO">Nao Robot</span>
+              <p data-i18n="NAODescription">
                 Created software enabling the NAO robot to perform multiple
                 basic commands while simultaneously interacting with users via
                 integration with chat GPT.
               </p>
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span>Timelapse </span>
-              <p>
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="Timelapse">Timelapse </span>
+              <p data-i18n="TimelapseDescription">
                 Combined the footage around the GUT campus using OpenCV, and
                 removed moving objects (people, cars) to create an abandoned
                 campus effect.
@@ -248,46 +273,50 @@
             <img
               class="icon-header"
               src="images/icons/technical.svg"
-              alt="phone icon"
+              alt="wrench icon"
             />
-            <h2 class="section-header">Technical Knowledge</h2>
+            <h2 class="section-header" data-i18n="TechKnowledge">
+              Technical Knowledge
+            </h2>
           </div>
           <hr class="line" />
-          <div class="job">
-            <div class="job-details">
-              <span
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="tech1"
                 >Experience in <strong>Python</strong> and
                 <strong>C++</strong> Software development</span
               >
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="tech2"
                 >Skilled in data extraction through <strong>SQL</strong></span
               >
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="tech3"
                 >Good knowledge of <strong>HTML</strong> and
                 <strong>CSS</strong> Web development</span
               >
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="tech4"
                 >Most experienced with <strong>Visual Studio Code</strong>
                 and
                 <strong>Pycharm</strong></span
               >
             </div>
           </div>
-          <div class="job">
-            <div class="job-details">
-              <span>Good knowledge of <strong>Git</strong></span>
+          <div class="bulletpoint">
+            <div class="details">
+              <span data-i18n="tech5"
+                >Good knowledge of <strong>Git</strong></span
+              >
             </div>
           </div>
         </section>
