@@ -1,3 +1,3 @@
 # CV
 
-Creating CV using html and csss
+Creating CV using html and css
