@@ -1,7 +1,7 @@
 const translations = {
   pl: {
     Download: "Pobierz CV",
-    DownloadLink: "https://gofile.io/d/E8TL3I",
+    DownloadLink: "https://gofile.io/d/I4Kxzx",
     Contact: "Kontakt",
     AboutMe: "O mnie",
     AboutMeDescription:
@@ -53,7 +53,7 @@ const translations = {
 
   en: {
     Download: "Download CV",
-    DownloadLink: "https://gofile.io/d/E8TL3I",
+    DownloadLink: "https://gofile.io/d/I4Kxzx",
     Contact: "Contact",
     AboutMe: "About Me",
     AboutMeDescription:
