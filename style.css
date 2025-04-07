@@ -3,7 +3,6 @@
 body {
   font-family: "Montserrat", Arial, sans-serif;
   background-color: aliceblue;
-  padding: 40px, 0px;
   color: #636466;
 }
 
@@ -55,7 +54,7 @@ p {
 }
 
 .link {
-  padding: 2px 4px;
+  padding: 2px 0px;
   color: #636466;
   text-decoration: none;
   font-weight: normal;
@@ -63,19 +62,24 @@ p {
 }
 
 .link:hover {
+  padding: 2px 0px;
   color: white;
   background-color: #608abf;
   border-radius: 5px;
 }
 
 .link:focus {
+  padding: 2px 0px;
   outline: none;
   color: white;
   background-color: #608abf;
+  border-radius: 5px;
 }
 
 .link:active {
+  padding: 2px 0px;
   text-decoration: underline;
+  border-radius: 5px;
 }
 
 h3 {
@@ -98,14 +102,14 @@ h1 {
 }
 
 img {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border: 7px solid white;
 }
 
 .left {
-  flex: 0 0 40%;
+  flex: 0 0 38.2%;
   position: relative;
   background-color: #f8f8f8;
   display: flex;
@@ -180,8 +184,8 @@ header {
 .container {
   display: flex;
   box-shadow: 0 0 10px grey;
-  width: 21cm;
-  margin: 0 auto;
+  width: 25cm;
+  margin: 30px auto;
   background-color: white;
   border-radius: 10px;
 }
@@ -190,7 +194,8 @@ header {
   border: none;
   height: 1px;
   background-color: #608abf;
-  margin-top: 0%;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .icon-header {
@@ -210,9 +215,82 @@ header {
 }
 
 .right {
-  flex: 0 0 60%;
+  flex: 0 0 61.8%;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.job {
+  margin: auto;
+  position: relative;
+  padding-left: 25px;
+}
+
+.job::before {
+  content: "•";
+  color: #608abf;
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: 5%;
+  transform: translateY(-50%);
+}
+
+.job::after {
+  content: "";
+  position: absolute;
+  left: 6.7px;
+  top: -8px;
+  bottom: -8px;
+  width: 1.5px;
+  background-color: #608abf;
+}
+
+.job-details {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.job-details span {
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.job-details p {
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.job-title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.job-title span {
+  font-size: 11px;
+  margin: 0%;
+}
+
+.job-title em {
+  font-size: 14px;
+  margin: 0%;
+}
+
+.project-tile {
+  font-size: 14px;
+  margin: 0%;
 }
