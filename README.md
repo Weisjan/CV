@@ -1,3 +1,3 @@
 # CV
 
-Plik CV z wykorzystaniem html i css
+Creating CV using html and css
