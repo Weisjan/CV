@@ -2,6 +2,7 @@ const translations = {
   pl: {
     Download: "Pobierz CV",
     DownloadLink: "https://gofile.io/d/I4Kxzx",
+    Switch: "EN",
     Contact: "Kontakt",
     AboutMe: "O mnie",
     AboutMeDescription:
@@ -54,6 +55,7 @@ const translations = {
   en: {
     Download: "Download CV",
     DownloadLink: "https://gofile.io/d/I4Kxzx",
+    Switch: "PL",
     Contact: "Contact",
     AboutMe: "About Me",
     AboutMeDescription:
@@ -104,16 +106,14 @@ const translations = {
   },
 };
 
-let currentLang = "en";
+let currentLang = navigator.language.startsWith("pl") ? "pl" : "en";
 
 function translatePage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
-      // Zmiana tekstu
       el.innerHTML = translations[lang][key];
 
-      // Jeśli to przycisk pobierania CV – zmień też href
       if (key === "Download") {
         el.setAttribute("href", translations[lang]["DownloadLink"]);
       }
@@ -124,11 +124,8 @@ function translatePage(lang) {
 document.getElementById("lang-toggle").addEventListener("click", () => {
   currentLang = currentLang === "en" ? "pl" : "en";
   translatePage(currentLang);
-  document.getElementById("lang-toggle").textContent =
-    currentLang === "en" ? "PL" : "EN";
 });
 
-// Initial load
 document.addEventListener("DOMContentLoaded", () => {
   translatePage(currentLang);
 });
