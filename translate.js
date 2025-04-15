@@ -47,9 +47,9 @@ const translations = {
     tech2:
       "Zdolność zarządzanie bazami danych za pomocą <strong>PostgreSQL</strong>",
     tech3:
-      "Dobra znajomość tworzenia stron internetowych w <strong>HTML</strong>, <strong>CSS</strong> i <strong>JavaScript</strong>",
+      "Dobra znajomość tworzenia stron internetowych w <strong>HTML</strong> i <strong>CSS</strong>",
     tech4:
-      "Największe doświadczenie w pracy z <strong>Visual Studio Code</strong> i <strong>PyCharm</strong>",
+      "Doświadczenie w pracy z <strong>Visual Studio Code</strong> i <strong>PyCharm</strong>",
     tech5: "Dobra znajomość systemu <strong>Git</strong>",
   },
 
@@ -100,7 +100,7 @@ const translations = {
       "Experience in <strong>Python</strong>, <strong>C++</strong> and <strong>R</strong> Programming",
     tech2: "Ability to manage databases using <strong>PostgreSQL</strong>",
     tech3:
-      "Good knowledge of <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> Web development",
+      "Good knowledge of <strong>HTML</strong> and <strong>CSS</strong> Web development",
     tech4:
       "Most experienced with <strong>Visual Studio Code</strong> and <strong>PyCharm</strong>",
     tech5: "Good knowledge of <strong>Git</strong>",
