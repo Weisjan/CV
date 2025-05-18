@@ -8,7 +8,6 @@ An interactive web page – Jan Weis’s CV. The site supports two languages (PL
 - CSS3  
 - JavaScript  
 - Netlify (for hosting)  
-- [Gofile.io](https://gofile.io/d/E8TL3I) (for storing the PDF file)
 
 ## Installation
 
@@ -29,6 +28,8 @@ CV
 │   ├── avatar.jpg
 │   └── icons
 |       └── ...
+├── Jan_Weis_CV_ENG.pdf
+├── Jan_Weis_CV_PL.pdf
 └── README.md
 ```
 
@@ -48,7 +49,7 @@ The project is deployed on [Netlify](https://janweis-cv.netlify.app), and the de
 
 - The default site language is English (EN)  
 - The language switcher dynamically updates the content without page refresh  
-- The PDF file can be updated by replacing the `DownloadLink` in the JavaScript file
+
 
 ## Author
 
