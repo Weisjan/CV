@@ -1,7 +1,7 @@
 const translations = {
   pl: {
     Download: "Pobierz CV",
-    DownloadLink: "https://gofile.io/d/I4Kxzx",
+    DownloadLink: "https://janweis-cv.netlify.app/jan-weis-cv.pdf",
     Switch: "EN",
     Contact: "Kontakt",
     AboutMe: "O mnie",
