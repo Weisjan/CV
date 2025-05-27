@@ -6,7 +6,7 @@ const translations = {
     Contact: "Kontakt",
     AboutMe: "O mnie",
     AboutMeDescription:
-      "Jestem absolwentem studiów inżynierskich z rosnącym zainteresowaniem w dziedzinie uczenia maszynowego. Lubię pracować zespołowo, a jednocześnie jestem mocno zmotywowany do nauki i rozwoju. Aktywnie angażuję się w działalność organizacji studenckich. W wolnym czasie gram na gitarze w zespole muzycznym, interesuję się szachami i sportem, a także uczę się języka japońskiego.",
+      "Jestem inżynierem z silnym nastawieniem na rozwój w obszarze uczenia maszynowego oraz analizy danych. Cechuje mnie umiejętność pracy zespołowej, samodzielność w realizacji zadań oraz zaangażowanie w rozwój zarówno techniczny, jak i interpersonalny. Aktywnie uczestniczę w inicjatywach studenckich, co pozwala mi rozwijać umiejętności organizacyjne i przywódcze. Poza pracą techniczną rozwijam pasje, które uczą dyscypliny i kreatywności — gram na gitarze w zespole heavymetalowym, trenuję szachy i uczę się języka japońskiego.",
     Skills: "Umiejętności",
     CriticalThinking: "Krytyczne myślenie",
     Teamwork: "Praca zespołowa",
@@ -60,7 +60,7 @@ const translations = {
     Contact: "Contact",
     AboutMe: "About Me",
     AboutMeDescription:
-      "I am a graduate of engineering studies with a growing interest in the field of machine learning.  I enjoy collaborating with others and thrive in team environments, while also being strongly motivated to continuously learn and improve my skills. I am actively involved in student organizations. In my free time, I play guitar in a music band, I'm interested in chess and sports, and I'm also learning Japanese.",
+      "I am an engineer with a strong focus on development in the area of ​​machine learning and data analysis. I am characterized by teamwork skills, independence in carrying out tasks and commitment to both technical and interpersonal development. I actively participate in student initiatives, which allows me to develop organizational and leadership skills. Apart from technical work, I develop passions that teach discipline and creativity - I play the guitar in a band, I practice chess and I learn Japanese.",
     Skills: "Skills",
     CriticalThinking: "Critical thinking",
     Teamwork: "Teamwork",
